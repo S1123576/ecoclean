@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>預約收垃圾 - EcoClean</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="section">
+        <h2>預約收垃圾 / Book a Waste Pickup</h2>
+        <form action="confirmation.html" method="post">
+            <label for="name">姓名 / Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">電子郵件 / Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">聯絡電話 / Phone:</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="address">地址 / Address:</label><br>
+            <input type="text" id="address" name="address" required><br><br>
+
+            <label for="date">預約日期 / Date:</label><br>
+            <input type="date" id="date" name="date" required><br><br>
+
+            <label for="volume">垃圾體積 / Waste Volume:</label><br>
+            <select id="volume" name="volume" required>
+                <option value="small">小型 / Small</option>
+                <option value="medium">中型 / Medium</option>
+                <option value="large">大型 / Large</option>
+                <option value="extra-large">超大型 / Extra Large</option>
+            </select><br><br>
+
+            <label for="type">垃圾種類 / Waste Type:</label><br>
+            <select id="type" name="type" required>
+                <option value="recyclable">可回收 / Recyclable</option>
+                <option value="non-recyclable">不可回收 / Non-Recyclable</option>
+                <option value="kitchen">廚餘 / Kitchen Waste</option>
+            </select><br><br>
+
+            <button type="submit">送出預約 / Submit Booking</button>
+        </form>
+    </section>
+</body>
+</html>
